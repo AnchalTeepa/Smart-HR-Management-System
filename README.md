@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### A Role-Based Human Resources Management Solution
+### An Integrated Employee, Timesheet & Appraisal Management Application
 
 **Built with Microsoft Power Apps, Microsoft Dataverse, and Microsoft Power Automate**
 
@@ -10,60 +10,116 @@
 
 ---
 
-## Overview
+## 📌 Project Overview
 
-Smart HR Management System is a role-based application designed to streamline core HR operations through a centralized solution. It simplifies employee information management, timesheet submission and review, and appraisal workflows for HR, managers, and employees.
+The **Smart HR Management System** is a role-based Human Resources Management application developed using Microsoft Power Platform. It integrates employee records, timesheet submission and review, and employee appraisal workflows into a centralized application.
 
-The application leverages Microsoft Power Platform to manage business data, organize workflows, and automate notifications.
+The system enables HR, managers, and employees to interact with relevant HR processes through role-based navigation, structured approval workflows, and centralized data management.
 
-## Key Features
+## 🎯 Business Problem
 
-- **Employee Management:** Maintain employee profiles and employment details.
-- **Timesheet Management:** Support timesheet creation, submission, review, and approval.
-- **Appraisal Management:** Manage employee self-appraisals, manager reviews, and final HR reviews.
-- **Role-Based Access Control:** Provide role-specific access for HR, managers, and employees.
-- **Workflow Automation:** Automate configured notifications and business processes using Power Automate.
-- **Business Process Flows:** Guide users through defined review and approval stages.
+Traditional HR processes can involve scattered employee records, manual timesheet submissions, delayed reviews, and difficulties coordinating employee self-appraisals, manager feedback, and final HR decisions.
 
-## Technology Stack
+The Smart HR Management System addresses these challenges by providing a centralized solution for employee information, timesheet management, and appraisal tracking.
+
+## ✨ Key Features
+
+### 1. Employee Management
+- Create and maintain employee records.
+- View employee details and profile information.
+- Organize employee information for HR operations.
+
+### 2. Timesheet Management
+- Create and manage draft timesheets.
+- Capture work date, project, task, hours worked, and work description.
+- Enable employee submission and manager review.
+- Maintain review status, manager comments, and review dates.
+- Support automated timesheet review notifications.
+
+### 3. Appraisal Management
+- Create appraisal cycles and initiate employee appraisals.
+- Capture employee self-appraisal responses.
+- Record manager feedback and ratings.
+- Support manager approval or rejection.
+- Enable final HR review and appraisal status updates.
+
+### 4. Role-Based Access
+The application provides role-specific navigation and screens for:
+
+- **HR** — employee management, appraisal cycle management, and final appraisal review.
+- **Manager** — timesheet review and appraisal review.
+- **Employee** — profile access, timesheet submission, and self-appraisal.
+
+Available actions depend on the application's configuration and assigned security roles.
+
+## 🛠️ Technology Stack
 
 | Technology | Purpose |
 |---|---|
-| Microsoft Power Apps | Model-Driven and Canvas applications |
-| Microsoft Dataverse | Structured data storage and management |
-| Microsoft Power Automate | Workflow automation and notifications |
-| Microsoft Power BI | Reporting and analytics, where configured |
+| Microsoft Power Apps | Application screens, forms, dashboards, and role-based navigation |
+| Microsoft Dataverse | Storage for employee records, timesheets, appraisals, and appraisal cycles |
+| Microsoft Power Automate | Automated timesheet review notifications |
+| Power Fx | Navigation, form behavior, record selection, validation, and status updates |
 
-## User Roles
+## 🔄 Application Workflow
 
-| Role | Responsibilities |
+### Employee Management
+1. HR creates and maintains employee records.
+2. Employees access their profile information through the application.
+
+### Timesheet Management
+1. The manager creates a draft timesheet.
+2. The employee enters work details and submits the timesheet.
+3. The manager reviews the submission and approves or rejects it.
+
+### Appraisal Management
+1. HR creates the appraisal cycle and initiates appraisals.
+2. The employee completes and submits the self-appraisal.
+3. The manager reviews the appraisal and approves or rejects it.
+4. HR completes the final review.
+
+## 🗄️ Data Model
+
+The application uses Microsoft Dataverse to organize its core HR data.
+
+| Table | Description |
 |---|---|
-| **HR** | Manage employee information and perform final appraisal reviews |
-| **Manager** | Review submitted timesheets and employee self-appraisals |
-| **Employee** | Submit timesheets and self-appraisals and track relevant statuses |
+| **Employees** | Employee information and profile details |
+| **Timesheets** | Employee, work date, project, task, hours worked, status, manager comments, and review details |
+| **Appraisals** | Employee, manager, appraisal cycle, self-appraisal, manager feedback, manager rating, and review status |
+| **Appraisal Cycles** | Cycle name, start date, end date, and related appraisal records |
 
-*Available actions depend on the application's configuration and assigned security roles.*
+## 🖥️ Main Application Screens
 
-## Business Workflow
+- **Role-Based Login:** Accepts email, password, and role selection for HR, Employee, or Manager.
+- **Home Dashboard:** Provides navigation to the application's main modules.
+- **Employee Management:** Supports employee record management and employee details.
+- **Employee Profile:** Displays employee profile information.
+- **Manager Dashboard:** Provides access to manager timesheets.
+- **Timesheet Details and Review:** Supports timesheet information, review, and status tracking.
+- **HR Appraisals:** Supports appraisal and appraisal cycle management.
+- **Employee Self-Appraisal:** Enables employees to submit self-assessment responses.
+- **Manager Appraisal Review:** Supports manager feedback, ratings, and review decisions.
+- **HR Final Review:** Supports the final appraisal review by HR.
 
-1. HR creates or updates employee records and assigns the relevant manager.
-2. Timesheet entries are created and completed according to the configured process.
-3. Employees submit timesheets for review.
-4. Managers review submitted timesheets and record their decisions.
-5. Employees complete and submit their self-appraisals.
-6. Managers review the submitted appraisals.
-7. HR performs the final review and updates the appraisal status.
+## 📈 Project Achievements
 
-## Project Highlights
+- Integrated three core HR modules into one application.
+- Implemented structured timesheet submission and manager review.
+- Connected employee self-appraisal, manager review, and final HR review.
+- Centralized HR data using Microsoft Dataverse.
+- Configured timesheet review notifications using Power Automate.
 
-- Centralized HR process management.
-- Structured data management using Microsoft Dataverse.
-- Role-based application access.
-- Automated notifications using Power Automate.
-- Organized timesheet and appraisal review workflows.
 
-## Author
+## 👩‍💻 Author
 
 **Anchal Teepa**  
 B.Tech in Computer Science and Engineering | 2026
 
+---
+
+<div align="center">
+
+*Streamlining HR operations through centralized data management and structured workflows with Microsoft Power Platform.*
+
+</div>
